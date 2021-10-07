@@ -7,6 +7,7 @@
       <router-link to="/listbinding">List Binding</router-link> |
       <router-link to="/rendering">Rendering Method</router-link> |
       <router-link to="/event">Event Method</router-link> |
+      <router-link to="/computedandwatch">Computed And Watch</router-link> |
     </div>
     <router-view/>
   </div>

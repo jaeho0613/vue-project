@@ -5,6 +5,7 @@ import DataBinding from "@/views/DataBinding";
 import ListBinding from "@/views/ListBinding";
 import RenderingMethod from "@/views/RenderingMethod";
 import EventMethod from "@/views/EventMethod";
+import ComputedAndWatch from "@/views/ComputedAndWatch";
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,11 @@ const routes = [
         path: '/event',
         name: 'EventMethod',
         component: EventMethod
+    },
+    {
+        path: '/computedandwatch',
+        name: 'ComputedAndWatch',
+        component: ComputedAndWatch
     }
 ]
 
