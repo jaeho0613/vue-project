@@ -54,6 +54,29 @@
       <span>체크한 지역: {{ picked }}</span>
     </div>
 
+    <h1>Img 데이터 바인딩</h1>
+    <div>
+      <img v-bind:src="imgSrc"/>
+    </div>
+
+    <h1>Button 데이터 바인딩</h1>
+    <div>
+      <input type="text" v-model="textValue"/>
+      <button type="button" v-bind:disabled="textValue==''">Click</button>
+    </div>
+
+    <h1>Class 데이터 바인딩</h1>
+    <h3>오브젝트를 이용</h3>
+    <div class="container" v-bind:class="{'active': isActive, 'text-red': hasError}">Class Binding</div>
+    <h3>배열을 이용</h3>
+    <div class="container" v-bind:class="[activeClass, errorClass]">Class Binding</div>
+
+    <h1>인라인 스타일 바인딩</h1>
+    <h3>오브젝트를 이용</h3>
+    <div v-bind:style="styleObject">인라인 스타일 바인딩</div>
+    <h3>배열을 이용</h3>
+    <div v-bind:style="[addStyle,baseStyle]">인라인 스타일 바인딩</div>
+
   </div>
 </template>
 
@@ -73,11 +96,42 @@ export default {
       radioValue1: '서울',
       radioValue2: '부산',
       radioValue3: '제주',
+      imgSrc: "https://kr.vuejs.org/images/logo.png",
+      textValue: "",
+      isActive: true,
+      hasError: true,
+      activeClass: 'active',
+      errorClass: 'text-red',
+      styleObject: {
+        color: 'red',
+        fontSize: '13px'
+      },
+      baseStyle: {
+        'background-color': 'yellow',
+        'width': '100%',
+        'height': '200px'
+      },
+      addStyle: {
+        'color': 'red',
+        'font-weight': 'bold'
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+container {
+  width: 100%;
+  height: 200px;
+}
 
+.active {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.text-red {
+  color: red;
+}
 </style>
