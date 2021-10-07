@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import DataBinding from "@/views/DataBinding";
 import ListBinding from "@/views/ListBinding";
 import RenderingMethod from "@/views/RenderingMethod";
+import EventMethod from "@/views/EventMethod";
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const routes = [
         path: '/rendering',
         name: 'Rendering',
         component: RenderingMethod
+    },
+    {
+        path: '/event',
+        name: 'EventMethod',
+        component: EventMethod
     }
 ]
 
