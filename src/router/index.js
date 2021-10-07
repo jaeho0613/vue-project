@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import DataBinding from "@/views/DataBinding";
 import ListBinding from "@/views/ListBinding";
+import RenderingMethod from "@/views/RenderingMethod";
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
         path: '/listbinding',
         name: 'listBinding',
         component: ListBinding
+    },
+    {
+        path: '/rendering',
+        name: 'Rendering',
+        component: RenderingMethod
     }
 ]
 

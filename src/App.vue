@@ -4,7 +4,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
-      <router-link to="/listbinding">List Binding</router-link>
+      <router-link to="/listbinding">List Binding</router-link> |
+      <router-link to="/rendering">Rendering Method</router-link> |
     </div>
     <router-view/>
   </div>
