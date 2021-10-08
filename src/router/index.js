@@ -8,6 +8,7 @@ import EventMethod from "@/views/EventMethod";
 import ComputedAndWatch from "@/views/ComputedAndWatch";
 import ListBinding2 from "@/views/ListBinding2";
 import NestedComponent from "@/components/NestedComponent";
+import ParentComponent from "@/views/ParentComponent";
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,11 @@ const routes = [
         path: '/nested',
         name: 'nested',
         component: NestedComponent
+    },
+    {
+        path: '/component',
+        name: 'component',
+        component: ParentComponent
     }
 ]
 
