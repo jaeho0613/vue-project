@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/databinding">Data Binding</router-link> |
       <router-link to="/listbinding">List Binding</router-link> |
+      <router-link to="/listbinding2">List Binding2</router-link> |
       <router-link to="/rendering">Rendering Method</router-link> |
       <router-link to="/event">Event Method</router-link> |
       <router-link to="/computedandwatch">Computed And Watch</router-link> |
