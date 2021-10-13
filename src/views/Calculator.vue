@@ -1,36 +1,44 @@
 <template>
   <div>
-    <h2>Calculator</h2>
     <div>
-      <input type="text" v-model="state.num1" @keyup="plusNumbers">
-      <span> + </span>
-      <input type="text" v-model="state.num2" @keyup="plusNumbers">
-      <span> = </span>
-      <span> {{ state.result }} </span>
+      <h2>Default Calculator</h2>
+      <div>
+        <input type="text" v-model="num1" @keyup="plusNumbers">
+        <span> + </span>
+        <input type="text" v-model="num2" @keyup="plusNumbers">
+        <span> = </span>
+        <span> {{ result }} </span>
+      </div>
+    </div>
+    <div>
+      <Composition/>
+    </div>
+    <div>
+      <CompositionAPI2/>
+    </div>
+    <div>
+      <CompositionAPI4/>
     </div>
   </div>
 </template>
 
 <script>
-import {reactive} from 'vue';
-
+import Composition from "@/views/CompositionAPI";
+import CompositionAPI2 from "@/views/CompositionAPI2";
+import CompositionAPI4 from "@/views/CompositionAPI4";
 export default {
   name: 'calculator',
-  setup() {
-    console.log("setup start")
-    let state = reactive({
+  components: {CompositionAPI4, CompositionAPI2, Composition},
+  data() {
+    return {
       num1: 0,
       num2: 0,
       result: 0
-    });
-
-    function plusNumbers() {
-      this.state.result = parseInt(state.num1) + parseInt(state.num2);
     }
-
-    return {
-      state,
-      plusNumbers
+  },
+  methods: {
+    plusNumbers() {
+      this.result = parseInt(this.num1) + parseInt(this.num2);
     }
   }
 }
