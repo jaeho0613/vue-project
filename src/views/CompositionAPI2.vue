@@ -2,7 +2,7 @@
   <div>
     <h2>Composition2 Calculator</h2>
     <div>
-      <input type="text" v-model="state.num1"/>
+      <input v-focus type="text" v-model="state.num1"/>
       <span> + </span>
       <input type="text" v-model="state.num2"/>
       <span> = </span>

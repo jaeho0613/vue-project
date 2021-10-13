@@ -11,6 +11,7 @@ import ParentComponent from "@/views/ParentComponent";
 import ProvideInject from "@/views/ProvideInject";
 import Calculator from "@/views/Calculator";
 import Mixins from "@/views/Mixins";
+import CustomDirective from "@/views/CustomDirective";
 
 const routes = [
     {
@@ -80,6 +81,11 @@ const routes = [
         path: '/mixin',
         name: 'mixin',
         component: Mixins
+    },
+    {
+        path: '/directive',
+        name: 'directive',
+        component: CustomDirective
     }
 ]
 

@@ -14,6 +14,7 @@
       <router-link to="/provideinject">Provide - inject</router-link> |
       <router-link to="/calculator">Calculator</router-link> |
       <router-link to="/mixin">Mixin</router-link> |
+      <router-link to="/directive">Custom Directive</router-link> |
     </div>
     <router-view/>
   </div>
