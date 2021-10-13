@@ -12,6 +12,7 @@ import ProvideInject from "@/views/ProvideInject";
 import Calculator from "@/views/Calculator";
 import Mixins from "@/views/Mixins";
 import CustomDirective from "@/views/CustomDirective";
+import Plugins from "@/views/Plugins";
 
 const routes = [
     {
@@ -86,6 +87,11 @@ const routes = [
         path: '/directive',
         name: 'directive',
         component: CustomDirective
+    },
+    {
+        path: '/plugins',
+        name: 'plugins',
+        component: Plugins
     }
 ]
 
