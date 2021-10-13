@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import DataBinding from "@/views/DataBinding";
 import ListBinding from "@/views/ListBinding";
@@ -10,8 +9,7 @@ import ListBinding2 from "@/views/ListBinding2";
 import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/views/ParentComponent";
 import ProvideInject from "@/views/ProvideInject";
-
-Vue.use(VueRouter)
+import Calculator from "@/views/Calculator";
 
 const routes = [
     {
@@ -71,12 +69,16 @@ const routes = [
         path: '/provideinject',
         name: 'provideinject',
         component: ProvideInject
+    },
+    {
+        path: '/calculator',
+        name: 'calculator',
+        component: Calculator
     }
 ]
 
-const router = new VueRouter({
-    mode: 'history',
-    base: process.env.BASE_URL,
+const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
     routes
 })
 
