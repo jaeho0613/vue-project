@@ -10,6 +10,7 @@ import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/views/ParentComponent";
 import ProvideInject from "@/views/ProvideInject";
 import Calculator from "@/views/Calculator";
+import Mixins from "@/views/Mixins";
 
 const routes = [
     {
@@ -74,6 +75,11 @@ const routes = [
         path: '/calculator',
         name: 'calculator',
         component: Calculator
+    },
+    {
+        path: '/mixin',
+        name: 'mixin',
+        component: Mixins
     }
 ]
 

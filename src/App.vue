@@ -13,6 +13,7 @@
       <router-link to="/component">Component</router-link> |
       <router-link to="/provideinject">Provide - inject</router-link> |
       <router-link to="/calculator">Calculator</router-link> |
+      <router-link to="/mixin">Mixin</router-link> |
     </div>
     <router-view/>
   </div>
