@@ -1,12 +1,17 @@
 <template>
-  <ProvideInjectChild/>
+  <div>
+    <ProvideInjectChild/>
+    <CompositionAPIProvide/>
+  </div>
 </template>
 
 <script>
 import ProvideInjectChild from "@/views/ProvideInjectChild";
+import CompositionAPIProvide from "@/views/CompositionAPIProvide";
+
 export default {
   name: "ProvideInject",
-  components: {ProvideInjectChild},
+  components: {CompositionAPIProvide, ProvideInjectChild},
   data() {
     return {
       items: ['A', 'B']
