@@ -11,6 +11,7 @@
       <router-link to="/computedandwatch">Computed And Watch</router-link> |
       <router-link to="/nested">Nested</router-link> |
       <router-link to="/component">Component</router-link> |
+      <router-link to="/provideinject">Provide - inject</router-link> |
     </div>
     <router-view/>
   </div>

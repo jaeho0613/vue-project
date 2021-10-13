@@ -9,6 +9,7 @@ import ComputedAndWatch from "@/views/ComputedAndWatch";
 import ListBinding2 from "@/views/ListBinding2";
 import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/views/ParentComponent";
+import ProvideInject from "@/views/ProvideInject";
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ const routes = [
         path: '/component',
         name: 'component',
         component: ParentComponent
+    },
+    {
+        path: '/provideinject',
+        name: 'provideinject',
+        component: ProvideInject
     }
 ]
 
